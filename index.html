@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticatcher</title>
+    <!-- 구글 웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- bx slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- bx slider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- images loded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- 외부 스크립트 -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <header id="main_header">
+        <h1>
+            <a href="./">
+                <img src="./images/logo_header.png" alt="logo">
+            </a>
+        </h1>
+
+        <div class="login">
+            <a href="#">Login</a>
+        </div>
+
+        <div class="header_sns">
+            <a href="https://www.instagram.com/coffeenamu_official/"><img src="./images/icon_insta.png"
+                    alt="인스타그램아이콘"></a>
+            <a href="https://blog.naver.com/coffeenamu9173"><img src="./images/icon_blog.png" alt="블로그아이콘"></a>
+        </div>
+
+        <div class="bg"></div>
+
+        <nav id="gnb">
+            <ul class="depth1">
+                <li><a href="sub1_1.html">Coffee Namu</a>
+                    <ul class="depth2">
+                        <li><a href="sub1_1.html">커피나무 소개</a></li>
+                        <li><a href="#">커피나무 연혁</a></li>
+                        <li><a href="sub1_3.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="sub2_2.html">Menu</a>
+                    <ul class="depth2">
+                        <li><a href="#">신메뉴</a></li>
+                        <li><a href="sub2_2.html">메뉴소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Store</a>
+                    <ul class="depth2">
+                        <li><a href="#">매장찾기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Franchise</a>
+                    <ul class="depth2">
+                        <li><a href="#">가맹문의</a></li>
+                        <li><a href="#">가맹절차</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Community</a>
+                    <ul class="depth2">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">이달의 클래스</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">문의사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- 메인 비주얼 -->
+    <section id="main_banner" class="slider">
+        <div class="sliders">
+            <img src="https://via.placeholder.com/170x234/00ff11/?text=play1" alt=""
+                style="position:absolute; margin-left: 30px;">
+            <img src="https://via.placeholder.com/170x234/ffff01/?text=play2" alt=""
+                style="position:absolute; margin-left: 30px;">
+            <img src="https://via.placeholder.com/170x234/11ff11/?text=play3" alt=""
+                style="position:absolute; margin-left: 30px;">
+        </div>
+
+        <div class="pager">
+            <a href="#" class="first active">1</a>
+            <a href="#" class="second">2</a>
+            <a href="#" class="third">3</a>
+        </div>
+    </section>
+
+    <!-- 신메뉴 -->
+    <section id="add_banner">
+        <div class="images_box">
+            <img src="./images/add_banner_bg.jpg" alt="신제품 토피넛 배너">
+            <img src="./images/add_banner_left.png" alt="토피넛라떼">
+            <img src="./images/add_banner_piece1.png" alt="토피넛라떼">
+            <img src="./images/add_banner_piece2.png" alt="토피넛라떼">
+            <img src="./images/add_banner_piece3.png" alt="토피넛라떼">
+            <img src="./images/add_banner_right.png" alt="에스프레소토피넛라떼">
+            <img src="./images/add_banner_piece4.png" alt="에스프레소토피넛라떼">
+            <a href="sub2_2.html"><img src="./images/add_banner_btn.png" alt="메뉴보기"></a>
+        </div>
+    </section>
+
+    <!-- 뉴스 -->
+    <section id="news">
+        <h1>NEWS</h1>
+        <p>/<br>커피나무 이야기</p>
+
+        <article>
+            <div id="news_event">
+                <h3><a href="#">공지사항 / 이벤트</a></h3>
+                <span class="line"></span>
+                <ul class="list1">
+                    <li><a href="#">[신메뉴출시] 카라멜 멜팅 케이크 출시</a><span>2020.10.20</span></li>
+                    <li><a href="#">[신메뉴출시] 토피넛 라떼 출시</a><span>2020.10.20</span></li>
+                    <li><a href="#">[안내] 코로나 19 바이러스 감염 예방을 위한 거리두기</a><span>2020.05.21</span></li>
+                    <li><a href="#">[이벤트] 신메뉴 오라봉 출시 기념 인스타그램 인증샷</a><span>2020.03.04</span></li>
+                </ul>
+            </div>
+
+            <div id="news_class">
+                <h3><a href="#">이달의 클래스</a></h3>
+                <span class="line"></span>
+                <ul class="list1">
+                    <li><a href="#">[클래스] 알콤달콤 커피나무 베이킹 클래스</a><span>2020.01.06</span></li>
+                    <li><a href="#">[클래스] 알콤달콤 커피나무 커피 클래스</a><span>2019.12.06</span></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <!-- 가맹안내 -->
+
+    <section id="fr">
+        <img src="images/franchise.png" alt="가맹안내">
+        <p>고객과 가맹점주, 협력사의<br>상생의 가치를 실천합니다.</p>
+        <a href="#">가맹절차</a>
+        <a href="#">가맹문의</a>
+    </section>
+
+    <section id="sns">
+        <div class="title_txt">
+            <h1>SNS</h1> <br>
+            <h2> / </h2> <br>
+            <h2>이벤트 및 인증샷</h2>
+        </div>
+
+        <article class="sns_img">
+            <a href="https://www.instagram.com/p/B3rSEzzlqg5/"><img src="./images/sns_pic1.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/B9TJ3zwH88B/"><img src="./images/sns_pic2.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/CCdORPIlpd5/"><img src="./images/sns_pic3.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/CButmrnFFTy/"><img src="./images/sns_pic4.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/CGi8fjvF2Ya/"><img src="./images/sns_pic5.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/CCS1LHaFTRa/"><img src="./images/sns_pic6.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/B4jAYCIlFrp/"><img src="./images/sns_pic7.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/CBAQVnmFIk6/"><img src="./images/sns_pic8.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/CFZE1XrFSD4/"><img src="./images/sns_pic9.png" alt="sns이벤트이미지"></a>
+            <a href="https://www.instagram.com/p/CGi-SyvlaRL/"><img src="./images/sns_pic10.png" alt="sns이벤트이미지"></a>
+        </article>
+
+    </section>
+
+    <footer id="main_footer">
+        <a href="./"><img src="./images/logo_footer.png" alt="logo"></a>
+        <h3><a href="sub1_1.html">회사소개</a> &nbsp;&nbsp; <a href="#">제휴/제안</a> &nbsp;&nbsp; <a
+                href="#"><strong>개인정보처리방침</strong></a> </h3>
+        <p>서울시 동작구 상도로 53길 65 &nbsp;&nbsp; (주)커피나무 대표자: 백지연 &nbsp;&nbsp; 개인정보보호책임자: 백승훈</p>
+        <p>TEL: 1577-9173 &nbsp;&nbsp; FAX: 02-821-0744 &nbsp;&nbsp; 사업자등록번호: 108-86-14200 &nbsp;&nbsp;
+            E-MAIL:info@coffeenamu.co.kr</p>
+        <p>&copy; Coffee Namu. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
