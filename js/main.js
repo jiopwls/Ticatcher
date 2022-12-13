@@ -1,4 +1,3 @@
-// 2단계 메뉴 (전체 슬라이드)
 $(function () {
   $('.depth1 > li').hover(
     function () {
@@ -14,7 +13,6 @@ $(function () {
 })
 
 /** 
-  ### slider 사용법 ###
   sliderStart() 슬라이더 재생
   sliderStop() 슬라이더 정지
 **/
