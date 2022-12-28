@@ -1,16 +1,32 @@
-$(function () {
-  $('.depth1 > li').hover(
-    function () {
+$(document).ready(function() {
+  var gnb = $('.gnb_menu');
 
-      $('.bg').stop().slideDown(200);
-      $('.depth2').stop().slideDown(200);
-    },
-    function () {
-      $('.bg').stop().slideUp(200);
-      $('.depth2').stop().slideUp(200);
-    }
-  );
-})
+  gnb.mouseenter(function() {
+    $('.depth2').show();
+    // menu bg
+    var menuHeight = $('.header').outerHeight();
+    var inmeHegiht = $('.depth2').outerHeight();
+    $('.bg').css({
+      'top': menuHeight + 'px',
+      height: inmeHegiht + 'px'
+    });
+  });
+
+  gnb.mouseleave(function() {
+    $('.depth2').hide();
+    $('.bg').css('height', '0')
+
+  });
+
+  //depth2 hover시 depth1 active
+  $('.gnb_menu < li').mouseenter(function() {
+    $(this).children().addClass('active');
+    $(this).siblings().children().removeClass('active')
+  });
+  $('.gnb_menu < li').mouseleave(function() {
+    $(this).children().removeClass('active');
+  });
+});
 
 /** 
   sliderStart() 슬라이더 재생

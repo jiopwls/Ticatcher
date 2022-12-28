@@ -1,31 +1,126 @@
-/* style.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
-  background: #000;
-  color: #fff;
-  /* overflow-x: hidden; */
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  /* color: #2e2e2e; */
-}
-
-body {
-  /* color: #2e2e2e; */
-}
-
 .header {
-  /* background-image: url(../img/neon1.png); */
-  background-position: bottom 10px;
-  /* background-repeat: round; */
-  /* border-image: url(../img/neon_led1.jpg); */
+    position: relative;
+}
 
+.header_content {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.header_content>img {
+    width: 1903px;
+    position: relative;
+    top: 0;
+}
+
+.content {
+    width: 980px;
+    margin: 0 auto;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    position: absolute;
+    display: flex;
+    padding: 0px 5px 25px 0px;
+}
+
+.content>h1 {
+    align-items: center;
+}
+
+.content>h1>a {
+    width: 150px;
+}
+
+.content>h1>a>img {
+    width: 150px;
+}
+
+.lnb {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lnb li {
+    float: right;
+    margin-right: 20px;
+}
+
+.lnb li:first-child {
+    margin-right: 0px;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: -1;
+    background: #000;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.gnb {
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 980px;
+    padding: 5px 0;
+    z-index: 100;
+}
+
+.gnb>li {
+    position: relative;
+}
+
+.gnb>li>a:active {
+    color: red;
+    font-weight: bold;
+}
+
+.gnb_contents {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gnb_menu {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.gnb_menu>li {
+    float: left;
+    width: 110px;
+    padding: 20px 0;
+}
+
+.gnb_menu>li>a {
+    display: block;
+}
+
+.gnb_menu>li:nth-child(4) a {
+    display: block;
+    margin-left: 15px;
+}
+
+.depth2 {
+    height: 200px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.depth2 a:hover,
+.depth2 a:active,
+.depth2 a:focus {
+    font-weight: bold;
 }
