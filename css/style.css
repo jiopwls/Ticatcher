@@ -33,8 +33,9 @@
     width: 150px;
 }
 
-.content>h1>a>img {
-    width: 150px;
+.logo {
+    width: 200px;
+    margin: 10px 0 0 -20px;
 }
 
 .lnb {
@@ -51,6 +52,11 @@
 
 .lnb li:first-child {
     margin-right: 0px;
+}
+
+.lnb li a:hover {
+    font-weight: bold;
+    color: #ffeea1;
 }
 
 .bg {
@@ -79,11 +85,6 @@
     position: relative;
 }
 
-.gnb>li>a:active {
-    color: red;
-    font-weight: bold;
-}
-
 .gnb_contents {
     width: 980px;
     margin: 0 auto;
@@ -103,6 +104,7 @@
 
 .gnb_menu>li>a {
     display: block;
+    font-weight: bold;
 }
 
 .gnb_menu>li:nth-child(4) a {
@@ -123,4 +125,5 @@
 .depth2 a:active,
 .depth2 a:focus {
     font-weight: bold;
+    color: #ffeea1;
 }
