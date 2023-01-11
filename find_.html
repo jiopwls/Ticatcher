@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticatcher - 회원가입</title>
+    <!-- 구글 웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- bx slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/join_before.css">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- bx slider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- images loded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- 외부 스크립트 -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_content">
+            <div class="content">
+                <h1>
+                    <a href="./index.html">
+                        <img class="logo" src="./img/logo_join3.png" alt="로고">
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="check_member_txt" style="width: 400px; float: left;">
+            <p>회원가입 여부 안내</p>
+            <ul>
+                <li>
+                    기존 회원가입 정보와 일치하는 정보를 입력하셔야 회원가입 여부를 정확하게 확인하실 수 있습니다.
+                    <em>입력하신 정보는 회원가입 여부에만 사용되며 저장되지 않습니다.</em>
+                </li>
+            </ul>
+        </div>
+        <form name="signupForm" style="width: 400px; float:right;">
+            <div class="per_info">
+                <input type="text" class="name input_box" name="name" size=10 placeholder="이름을 입력해주세요.">
+            </div>
+            <div class="per_info">
+                <div class="jumin1">
+                    <input type="text" class="jumin_num1 input_box" name="jumin_num1" maxlength=6
+                        placeholder="법정생년월일 6자리를 입력해주세요." style="">
+                </div>
+            </div>
+            <div class="per_info">
+                <input type="text" class="name input_box" name="name" maxlength="8"
+                    placeholder="휴대전화번호 뒤 7~8자리를 입력해주세요. (01X 제외)">
+            </div>
+            <div class="confirm_box" style="">
+                <button type="submit" class="" onClick="checkForm()" style="margin-top: 10px; width: 100%;">가입여부
+                    확인</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <footer style="width: 980px; margin:0 auto;">
+        <!-- <a href=" /" style="width: 150px;">
+            <img class="logo" src="./img/logo_join2.png" alt="로고">
+        </a>
+        <div class="company_info">
+            <address>(08368)서울특별시 구로구 항동 171-4, 하버라인 3단지 309동 101호</address>
+            <address>(08368)경기도 수원시 수원역</address>
+            <d1>
+                <dt>Ticatcher</dt>
+                <dt>Tel : 010-9074-1056</dt>
+            </d1>
+        </div> -->
+    </footer>
+</body>
+
+</html>

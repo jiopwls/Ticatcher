@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <!-- 스타일시트 -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/join.css">
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- bx slider -->
@@ -27,88 +27,79 @@
 <body>
     <div class="header">
         <div class="header_content">
-            <img src="./img/neon_1.png" alt="네온led배경">
             <div class="content">
                 <h1>
                     <a href="./index.html">
-                        <img class="logo" src="./img/logo.png" alt="로고">
+                        <img class="logo" src="./img/logo_join2.png" alt="로고">
+
                     </a>
                 </h1>
-                <ul class="lnb">
-                    <li>
-                        <a href="./login.html">로그인</a>
-                    </li>
-                    <li>
-                        <a href="./join.html">회원가입</a>
-                    </li>
-                    <li>
-                        <a href="./myPage.html">MyPage</a>
-                    </li>
-                    <li>
-                        <a href="./help.html">고객센터</a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="bg">
-        </div>
-
-        <div class="gnb">
-            <div class="gnb_contents">
-                <ul class="gnb_menu">
-                    <li>
-                        <a href="">공연</a>
-                        <ul class="depth2">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">예매율 순위</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">평점 순위</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">예매</a>
-                        <ul class="depth2" style="display: none; height: 200px;">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">지역별 예매</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">공연별 예매</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">이벤트</a>
-                        <ul class="depth2" style="display: none; height: 200px;">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">진행중인
-                                    이벤트</a></li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">종료된
-                                    이벤트</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="">커뮤니티</a>
-                        <ul class="depth2" style="display: none; height: 200px;">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">자유게시판</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">극단원 모집</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">오디션 정보</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">새 공연
-                                    소식</a></li>
-                        </ul>
-                    </li>
-                    <li style="float: left; width:110px; padding:20px 0;">
-                        <a href="" style="display: block; margin-left: 45px;">극장검색</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
-    <div class="container" style="position:relative; width:100%;">
 
+    <div class="container" style="position:relative;">
+        <form name="signupForm" style="">
+            <div class="join_row">
+                <h6>아이디</h6>
+                <input type="text" class="uid input_box" name="uid" size=15 onchange="changeid();"
+                    placeholder="4~15자 이내로 입력해주세요" style="">
+                <input type="hidden" name="chkid" value="0">
+            </div>
+            <div class="join_row" style="clear: both;">
+                <h6>비밀번호</h6>
+                <input type="password" class="pwd input_box" name="pwd" onkeyup="chkpwd();" size=15
+                    placeholder="영문, 숫자 조합" style=" margin-bottom: 0px;">
+                <h6>비밀번호 재확인</h6>
+                <input type="password" class="pwd_chk input_box" name="pwd_chk" onkeyup="chkpwd();" size=15
+                    placeholder="비밀번호 재확인" style="margin-top: 0px;">
+            </div>
+            <input type="hidden" name="pwdchk" value="0">
+            <div class="divpwd"></div>
+            <div class=email_position style="">
+                <div class=email_position1>
+                    <h6>이메일</h6>
+                    <input type="text" class="email_fr input_box" name="email_fr" size=15 placeholder="abcde@naver.com"
+                        style="">
+
+                </div>
+                <div class=email_mark>
+                </div>
+            </div>
+            <input type="hidden" class="email" name="email">
+            <div class="per_info">
+                <h6>이름</h6>
+                <input type="text" class="name input_box" name="name" size=15 placeholder="홍길동">
+            </div>
+            <div class="per_info">
+                <h6>닉네임</h6>
+                <input type="text" class="name input_box" name="name" size=15 placeholder="20자 이하로 입력해주세요.">
+            </div>
+            <div class="per_info">
+                <div class="jumin1">
+                    <h6>주민번호</h6>
+                    <input type="text" class="jumin_num1 input_box" name="jumin_num1" maxlength=6 size=10
+                        placeholder="주민번호 앞 6자리" style="width: 45%; float: left;">
+                    <span style="position:absolute; font-size: 25px; margin-left: 15px;">-</span>
+                </div>
+                <div class="jumin2">
+                </div>
+                <div class="jumin3" style="margin-bottom: 10px;">
+                    <input type="password" class="jumin_num2 input_box" name="jumin_num2" maxlength=7 size=10
+                        placeholder="주민번호 뒷 7자리" style="width: 45%; float: right;">
+                </div>
+                <input type="hidden" class="jumin_num" name="jumin_num">
+            </div>
+            <div class="confirm_box" style="margin-top: 20px; float: right;">
+                <button type="button" class="" style="margin-right: 10px;" onClick="self.close()">취소</button>
+                <button type="submit" class="" onClick="checkForm()">가입하기</button>
+            </div>
+        </form>
+    </div>
     </div>
     <footer style="width: 980px; margin:0 auto;">
-        <a href=" /" style="width: 150px;">
-            <img class="logo" src="./img/logo.png" alt="로고">
+        <!-- <a href=" /" style="width: 150px;">
+            <img class="logo" src="./img/logo_join2.png" alt="로고">
         </a>
         <div class="company_info">
             <address>(08368)서울특별시 구로구 항동 171-4, 하버라인 3단지 309동 101호</address>
@@ -117,7 +108,7 @@
                 <dt>Ticatcher</dt>
                 <dt>Tel : 010-9074-1056</dt>
             </d1>
-        </div>
+        </div> -->
     </footer>
 </body>
 

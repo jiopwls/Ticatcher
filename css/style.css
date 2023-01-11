@@ -1,3 +1,8 @@
+* {
+    background: #000;
+    color: #fff;
+}
+
 .header {
     position: relative;
 }
@@ -34,7 +39,7 @@
 }
 
 .logo {
-    margin: 8px 0 0 -20px;
+    margin: 5px 0 0 -10px;
 }
 
 .lnb {
@@ -55,7 +60,7 @@
 
 .lnb li a:hover {
     font-weight: bold;
-    color: #ffeea1;
+    color: #FEF1AB;
 }
 
 .bg {
@@ -93,6 +98,7 @@
 .gnb_menu {
     display: inline-flex;
     overflow: hidden;
+    padding-left: 10px;
 }
 
 .gnb_menu>li {
@@ -124,5 +130,10 @@
 .depth2 a:active,
 .depth2 a:focus {
     font-weight: bold;
-    color: #ffeea1;
+    /* color: #ffeea1; */
+    color: #FEF1AB;
+}
+
+.select_chart {
+    padding-left: 10px;
 }
