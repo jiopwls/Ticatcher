@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticatcher - 회원가입</title>
+    <title>회원가입 | Ticatcher</title>
     <!-- 구글 웹폰트 -->
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
@@ -43,7 +43,9 @@
             <ul>
                 <li>
                     기존 회원가입 정보와 일치하는 정보를 입력하셔야 회원가입 여부를 정확하게 확인하실 수 있습니다.
-                    <em>입력하신 정보는 회원가입 여부에만 사용되며 저장되지 않습니다.</em>
+                    <p>
+                        <em>입력하신 정보는 회원가입 여부에만 사용되며 저장되지 않습니다.</em>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -58,8 +60,8 @@
                 </div>
             </div>
             <div class="per_info">
-                <input type="text" class="name input_box" name="name" maxlength="8"
-                    placeholder="휴대전화번호 뒤 7~8자리를 입력해주세요. (01X 제외)">
+                <input type="text" class="phone_num input_box" name="phone_num" maxlength="8"
+                    placeholder="휴대전화번호를 입력해주세요. (01X 포함)">
             </div>
             <div class="confirm_box" style="">
                 <button type="submit" class="" onClick="checkForm()" style="margin-top: 10px; width: 100%;">가입여부

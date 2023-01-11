@@ -17,3 +17,14 @@ a {
 body {}
 
 .header {}
+
+.txt_div {
+  color: #ccc;
+  font-size: 11px;
+  vertical-align: 2px;
+  margin: 0 9px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticatcher - 회원가입</title>
+    <title>회원가입 | Ticatcher</title>
     <!-- 구글 웹폰트 -->
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
@@ -22,6 +22,7 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <!-- 외부 스크립트 -->
     <script src="./js/main.js"></script>
+    <script src="./js/join.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <div class="content">
                 <h1>
                     <a href="./index.html">
-                        <img class="logo" src="./img/logo_join2.png" alt="로고">
+                        <img class="logo" src="./img/logo_join3.png" alt="로고">
 
                     </a>
                 </h1>
@@ -40,42 +41,57 @@
 
     <div class="container" style="position:relative;">
         <form name="signupForm" style="">
+            <input type="hidden" id="isUser" name="isUser" value="F">
+            <input type="hidden" id="duinfo" name="duinfo">
+            <input type="hidden" name="idKey" id="idKey">
             <div class="join_row">
                 <h6>아이디</h6>
-                <input type="text" class="uid input_box" name="uid" size=15 onchange="changeid();"
+                <input type="text" id="user_id" class="uid input_txt" name="user_id" size=15 onchange="changeid();"
                     placeholder="4~15자 이내로 입력해주세요" style="">
                 <input type="hidden" name="chkid" value="0">
             </div>
-            <div class="join_row" style="clear: both;">
+            <div class="input_alert_id" style="color: red;"></div>
+            <div class="join_row" style="">
                 <h6>비밀번호</h6>
-                <input type="password" class="pwd input_box" name="pwd" onkeyup="chkpwd();" size=15
-                    placeholder="영문, 숫자 조합" style=" margin-bottom: 0px;">
+                <input type="password" id="user_pass" class="pwd input_txt" name="user_pass" onkeyup="chkpwd();" size=15
+                    placeholder="영문, 숫자 조합" style="">
+                <div class="input_alert_pw"></div>
                 <h6>비밀번호 재확인</h6>
                 <input type="password" class="pwd_chk input_box" name="pwd_chk" onkeyup="chkpwd();" size=15
                     placeholder="비밀번호 재확인" style="margin-top: 0px;">
+                <div class="input_alert_pw2"></div>
             </div>
             <input type="hidden" name="pwdchk" value="0">
             <div class="divpwd"></div>
+            <div class="per_info">
+                <h6>이름</h6>
+                <input type="text" class="name input_box" name="name" size=15 placeholder="이름">
+            </div>
+            <div class="per_info">
+                <h6>닉네임</h6>
+                <input type="text" class="name input_box" name="name" size=15 placeholder="10자 이하로 입력해주세요">
+            </div>
             <div class=email_position style="">
                 <div class=email_position1>
                     <h6>이메일</h6>
                     <input type="text" class="email_fr input_box" name="email_fr" size=15 placeholder="abcde@naver.com"
                         style="">
-
                 </div>
                 <div class=email_mark>
                 </div>
             </div>
             <input type="hidden" class="email" name="email">
-            <div class="per_info">
-                <h6>이름</h6>
-                <input type="text" class="name input_box" name="name" size=15 placeholder="홍길동">
+            <div class=phone_position style="">
+                <h6>휴대폰</h6>
+                <input type="text" class="phone_num input_box" name="phone_num" size=15 placeholder="010-" style="">
+                <button type="submit" class="phone_send" onClick="">인증번호 받기</button>
+                <div class="phone_confirm">
+                    <input type="tel" name="phone_con" id="phone_con" placeholder="인증번호를 입력하세요">
+                </div>
+                <div class=phone_mark>
+                </div>
             </div>
-            <div class="per_info">
-                <h6>닉네임</h6>
-                <input type="text" class="name input_box" name="name" size=15 placeholder="20자 이하로 입력해주세요.">
-            </div>
-            <div class="per_info">
+            <!-- <div class="per_info">
                 <div class="jumin1">
                     <h6>주민번호</h6>
                     <input type="text" class="jumin_num1 input_box" name="jumin_num1" maxlength=6 size=10
@@ -89,9 +105,8 @@
                         placeholder="주민번호 뒷 7자리" style="width: 45%; float: right;">
                 </div>
                 <input type="hidden" class="jumin_num" name="jumin_num">
-            </div>
-            <div class="confirm_box" style="margin-top: 20px; float: right;">
-                <button type="button" class="" style="margin-right: 10px;" onClick="self.close()">취소</button>
+            </div> -->
+            <div class="confirm_box" style="margin-top: 5px;">
                 <button type="submit" class="" onClick="checkForm()">가입하기</button>
             </div>
         </form>

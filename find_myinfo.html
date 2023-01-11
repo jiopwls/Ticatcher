@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디/비밀번호 찾기 | Ticatcher</title>
+    <!-- 구글 웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- bx slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/find_myinfo.css">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- bx slider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- images loded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- 외부 스크립트 -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_content">
+            <div class="content">
+                <h1>
+                    <a href="./index.html">
+                        <img class="logo" src="./img/logo_join3.png" alt="로고">
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="find_id" style="width: 420px; float: left;">
+            <p>아이디 찾기</p>
+            <ul>
+                <li>
+                    가입시 기재한 이름과 휴대폰 번호를 입력하면<br>회원님의 아이디를 확인할 수 있습니다.
+                </li>
+            </ul>
+
+            <form name="find_id_form" style="width: 350px;">
+                <div class="per_info">
+                    <input type="text" class="name input_box" name="name" size=10 placeholder="이름">
+                </div>
+                <div class="per_info">
+                    <input type="text" class="name input_box" name="name" maxlength="8"
+                        placeholder="휴대폰 번호를 입력해주세요. (01X 포함)">
+                </div>
+                <div class="confirm_box" style="">
+                    <button type="submit" class="" onClick="checkForm()" style="margin-top: 10px; width: 100%;">아이디
+                        찾기</button>
+                </div>
+            </form>
+        </div>
+        <div class="find_pw" style="width: 420px; float: right;">
+            <p>비밀번호 찾기</p>
+            <ul>
+                <li>
+                    가입시 기재한 휴대폰 번호를 통해 본인인증을 하시면<br>새 비밀번호로 변경할 수 있습니다.
+                </li>
+            </ul>
+
+            <form name="find_pw_form" style="width: 350px;">
+                <div class="per_info">
+                    <input type="text" class="input_box" name="id" placeholder="아이디" style="">
+                </div>
+                <!-- <div class="per_info">
+                    <input type="text" class="name input_box" name="name" size=10 placeholder="이름">
+                </div> -->
+
+                <div class="per_info">
+                    <input type="text" class="name input_box" name="name" maxlength="8"
+                        placeholder="휴대폰 번호를 입력해주세요. (01X 포함)">
+                </div>
+                <div class="confirm_box" style="">
+                    <button type="submit" class="" onClick="checkForm()" style="margin-top: 10px; width: 100%;">비밀번호
+                        변경</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer style="width: 980px; margin:0 auto;">
+        <!-- <a href=" /" style="width: 150px;">
+            <img class="logo" src="./img/logo_join2.png" alt="로고">
+        </a>
+        <div class="company_info">
+            <address>(08368)서울특별시 구로구 항동 171-4, 하버라인 3단지 309동 101호</address>
+            <address>(08368)경기도 수원시 수원역</address>
+            <d1>
+                <dt>Ticatcher</dt>
+                <dt>Tel : 010-9074-1056</dt>
+            </d1>
+        </div> -->
+    </footer>
+</body>
+
+</html>
