@@ -10,6 +10,7 @@
 .header_content {
     margin-bottom: 10px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .header_content>img {
@@ -136,4 +137,17 @@
 
 .select_chart {
     padding-left: 10px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.contents {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    margin-top: 10px;
 }

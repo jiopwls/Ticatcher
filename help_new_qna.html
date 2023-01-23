@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticatcher - 고객센터</title>
+    <!-- 구글 웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- bx slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/help.css">
+    <link rel="stylesheet" href="./css/help_new_qna.css">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- bx slider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- images loded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- 외부 스크립트 -->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_content">
+            <img src="./img/neon_1.png" alt="네온led배경">
+            <div class="content">
+                <h1>
+                    <a href="./index.html">
+                        <img class="logo" src="./img/logo.png" alt="로고">
+                    </a>
+                </h1>
+                <ul class="lnb">
+                    <li>
+                        <a href="./login.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="./join.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="./myPage.html">MyPage</a>
+                    </li>
+                    <li>
+                        <a href="./help.html">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg">
+        </div>
+
+        <div class="gnb">
+            <div class="gnb_contents">
+                <ul class="gnb_menu">
+                    <li>
+                        <a href="">공연</a>
+                        <ul class="depth2">
+                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">예매율 순위</a>
+                            </li>
+                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">평점 순위</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">예매</a>
+                        <ul class="depth2" style="display: none; height: 200px;">
+                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">지역별 예매</a>
+                            </li>
+                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">공연별 예매</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">이벤트</a>
+                        <ul class="depth2" style="display: none; height: 200px;">
+                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">진행중인
+                                    이벤트</a></li>
+                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">종료된
+                                    이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul class="depth2" style="display: none; height: 200px;">
+                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">자유게시판</a>
+                            </li>
+                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">극단원 모집</a>
+                            </li>
+                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">오디션 정보</a>
+                            </li>
+                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">새 공연
+                                    소식</a></li>
+                        </ul>
+                    </li>
+                    <li style="float: left; width:110px; padding:20px 0;">
+                        <a href="" style="display: block; margin-left: 45px;">극장검색</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="contents">
+            <div class="left_wrap">
+                <p>고객센터</p>
+                <ul>
+                    <a href="./help.html">
+                        <li class="left_wrap_btn">
+                            <span>공지사항</span>
+                        </li>
+                    </a>
+                    <a href="./help_faq.html">
+                        <li class="left_wrap_btn">
+                            <span>자주 찾는 질문</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="left_wrap_btn">
+                            <span class="select_btn">1:1 문의</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="right_wrap">
+                <p class="right_title">
+                    1:1 문의
+                </p>
+                <div class="right_list">
+                    <div class="qna_box">
+                        <div class="notice_box">
+                            &#183; 티켓 환불은
+                            <span class="highlight">MyPage</span>의 <span class="highlight">환불신청 버튼</span>을 이용해주세요.
+                            <br>
+                            &#183; 공연 티켓은 환불규정에 의거하여 <span class="highlight">관람 당일 환불/취소 및 일정 변경이 불가</span>합니다.
+                            <br>
+                            &#183; 답변은 업무일(평일 10:00~18:00) 기준 24시간 내로 완료되며, 주말/공휴일은 답변이 지연될 수 있습니다.
+                        </div>
+                        <div class="check_info">
+                            <table style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <th
+                                            style="width: 15%; display:block; float: left; padding: 20px 10px; text-align: left; border-bottom: 1px solid #e2e2e2; color: rgba(255, 255, 255, 0.8);">
+                                            이름
+                                        </th>
+                                        <td
+                                            style="width: 85%; display:block;float: right; border-bottom: 1px solid #e2e2e2; height: 65px; padding: 18px 10px 20px 10px;">
+                                            <strong>사용자</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th
+                                            style="width: 15%; display:block; float: left; padding: 20px 10px; text-align: left; color: rgba(255, 255, 255, 0.8);">
+                                            휴대폰
+                                        </th>
+                                        <td
+                                            style="width: 35%; display:block;float: left; height: 65px; padding: 18px 10px 20px 10px;">
+                                            <strong>010-****-1234</strong>
+                                        </td>
+                                        <th
+                                            style="width: 15%; display:block; float: left; padding: 20px 10px; text-align: left; color: rgba(255, 255, 255, 0.8);">
+                                            이메일
+                                        </th>
+                                        <td
+                                            style="width: 35%; display:block;float: left; height: 65px; padding: 18px 10px 20px 10px;">
+                                            <strong>ab**efg@naver.com</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="check_info_txt">
+                            <span> ※ 문의에 대한 빠른 답변을 위해 회원 가입 시
+                                입력하신
+                                연락처를 확인해주세요.</span>
+                            <a href="./myPage.html">
+                                <div class="write_btn">
+                                    수정
+                                </div>
+                            </a>
+                        </div>
+                        <div class="title_box">
+                            <table style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <th
+                                            style="width: 15%; display:block; float: left; padding: 20px 10px; text-align: left; border-bottom: 1px solid #e2e2e2;">
+                                            <label for="inp_title">
+                                                제목
+                                                <em>
+                                                    <img src="./img/ico_star.png" alt="필수">
+                                                </em>
+                                            </label>
+                                        </th>
+                                        <td
+                                            style="width: 85%; display:block;float: right; border-bottom: 1px solid #e2e2e2; height: 65px; padding: 18px 10px 20px 10px;">
+                                            <input type="text" id="inp_title" name="inp_title"
+                                                style="width:100%; border:1px solid #e2e2e2; height: 30px; padding: 10px 5px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th
+                                            style="width: 15%; height: 239px; display:block; float: left; padding: 20px 10px; text-align: left;  border-bottom: 1px solid #e2e2e2; ">
+                                            <label for="inp_txt">
+                                                내용
+                                                <em>
+                                                    <img src="./img/ico_star.png" alt="필수">
+                                                </em>
+                                            </label>
+                                        </th>
+                                        <td
+                                            style="width: 85%; display:block;float: left; padding: 18px 10px 20px 10px;  border-bottom: 1px solid #e2e2e2;">
+                                            <textarea id="inp_txt" name="inp_txt" cols="60" rows="5"
+                                                style="width:100%; height: 200px; border:1px solid #e2e2e2; padding: 10px 10px;float: left; vertical-align: top; resize: none;"
+                                                placeholder="문의하실 내용을 입력해주세요."></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th
+                                            style="width: 15%; display:block; float: left; padding: 20px 10px; text-align: left;">
+                                            <label for="inp_file">
+                                                첨부파일
+                                            </label>
+                                        </th>
+                                        <td
+                                            style="width: 85%; display:block;float: right; height: 65px; padding: 18px 10px 20px 10px;">
+                                            <input type="file" id="inp_file" name="inp_file"
+                                                onclick="javascript:alert('주민등록번호 등 개인정보가 포함된 파일이 첨부되지 않도록 유의하시기 바랍니다.');"
+                                                style="width:100%; height: 30px; padding: 3px 0px;">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- <div class="list_pager">
+                        <button class="btn_pager first" type="button" onclick="">처음</button>
+                        <button class="btn_pager prev" type="button" onclick="">이전</button>
+                        <ul>
+                            <li>
+                                <a href="" title="1 페이지 선택" class="on">1</a>
+                            </li>
+                            <li>
+                                <a href="">2</a>
+                            </li>
+                            <li>
+                                <a href="">3</a>
+                            </li>
+                            <li>
+                                <a href="">4</a>
+                            </li>
+                            <li>
+                                <a href="">5</a>
+                            </li>
+                            <li>
+                                <a href="">6</a>
+                            </li>
+                            <li>
+                                <a href="">7</a>
+                            </li>
+                            <li>
+                                <a href="">8</a>
+                            </li>
+                            <li>
+                                <a href="">9</a>
+                            </li>
+                            <li>
+                                <a href="">10</a>
+                            </li>
+                        </ul>
+
+                        <button class="btn_pager next" type="button" onclick="">다음</button>
+                        <button class="btn_pager end" type="button" onclick="">끝</button>
+                    </div> -->
+                </div>
+                <div>
+                    <a href="">
+                        <div class="write_btn">
+                            등록
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="width: 980px; margin:0 auto;">
+        <a href=" /" style="width: 150px;">
+            <img class="logo" src="./img/logo.png" alt="로고">
+        </a>
+        <div class="company_info">
+            <address>(08368)서울특별시 구로구 항동 171-4, 하버라인 3단지 309동 101호</address>
+            <address>(08368)경기도 수원시 수원역</address>
+            <d1>
+                <dt>Ticatcher</dt>
+                <dt>Tel : 010-9074-1056</dt>
+            </d1>
+        </div>
+    </footer>
+</body>
+
+</html>
