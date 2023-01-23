@@ -66,6 +66,13 @@ p {
     display: inline-block;
 }
 
+.info_title {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: -15px;
+}
+
 .list_header li {
     padding: 10px 0;
 }

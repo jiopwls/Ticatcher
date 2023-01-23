@@ -22,9 +22,8 @@ body {}
 
 .txt_div {
   color: #ccc;
-  font-size: 11px;
-  vertical-align: 2px;
-  margin: 0 9px;
+  font-size: 14px;
+  margin: 5px 10px;
 }
 
 input:focus::placeholder {
@@ -33,4 +32,8 @@ input:focus::placeholder {
 
 .highlight {
   color: #FEF1AB;
+}
+
+.highlight2 {
+  color: #741300;
 }

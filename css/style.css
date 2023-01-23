@@ -144,10 +144,75 @@
     width: 100%;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 .contents {
     width: 980px;
     height: 100%;
     margin: 0 auto;
     /* overflow: hidden; */
     margin-top: 10px;
+}
+
+.show_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+
+.show_info_left span span {
+    font-size: 12px;
+}
+
+.show_info_left span img {
+    width: 16px;
+}
+
+.show_info_right strong {
+    font-size: 13px;
+    padding-right: 5px;
+}
+
+.show_info_right span {
+    font-weight: bold;
+}
+
+footer a {
+    width: 180px;
+    float: left;
+}
+
+.all_company {
+    padding-top: 15px;
+}
+
+.company_info {
+    line-height: 18px;
+    /* width: 500px; */
+    /* outline: 1px solid blue; */
+    /* float: left; */
+}
+
+.company_info address {
+    font-style: normal;
+}
+
+.company_info_list {
+    display: flex;
+    /* float: left; */
+    /* clear: both; */
+}
+
+.company_info dt::after {
+    content: ':';
+    padding: 0 4px;
+}
+
+.company_info dt~dt::before {
+    content: '|';
+    padding: 0 5px;
+    /* font-size: 14px; */
 }
