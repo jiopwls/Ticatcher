@@ -104,7 +104,7 @@
 
 .gnb_menu>li {
     float: left;
-    width: 110px;
+    width: 100px;
     padding: 20px 0;
 }
 
@@ -181,8 +181,10 @@ table {
 }
 
 footer a {
-    width: 180px;
+    width: 150px;
     float: left;
+    margin-top: 10px;
+    padding-left: 5px;
 }
 
 .all_company {
