@@ -1,30 +1,43 @@
 $(document).ready(function() {
-  var gnb = $('.gnb_menu');
+  // var gnb = $('.gnb_menu');
 
-  gnb.mouseenter(function() {
-    $('.depth2').show();
-    // menu bg
-    var menuHeight = $('.header').outerHeight();
-    var inmeHegiht = $('.depth2').outerHeight();
-    $('.bg').css({
-      'top': menuHeight + 'px',
-      height: inmeHegiht + 'px'
-    });
-  });
+  // gnb.mouseenter(function() {
+  //   $('.depth2').show();
+  //   // menu bg
+  //   var menuHeight = $('.header').outerHeight();
+  //   var inmeHegiht = $('.depth2').outerHeight();
+  //   $('.bg').css({
+  //     'top': menuHeight + 'px',
+  //     height: inmeHegiht + 'px'
+  //   });
+  // });
 
-  gnb.mouseleave(function() {
-    $('.depth2').hide();
-    $('.bg').css('height', '0')
+  // gnb.mouseleave(function() {
+  //   $('.depth2').hide();
+  //   $('.bg').css('height', '0')
 
-  });
+  // });
 
-  //depth2 hover시 depth1 active
-  $('.gnb_menu < li').mouseenter(function() {
-    $(this).children().addClass('active');
-    $(this).siblings().children().removeClass('active')
-  });
-  $('.gnb_menu < li').mouseleave(function() {
-    $(this).children().removeClass('active');
+  // //depth2 hover시 depth1 active
+  // $('.gnb_menu < li').mouseenter(function() {
+  //   $(this).children().addClass('active');
+  //   $(this).siblings().children().removeClass('active')
+  // });
+  // $('.gnb_menu < li').mouseleave(function() {
+  //   $(this).children().removeClass('active');
+  // });
+  var check_width = $(window).width();
+  $(function () {
+      $(window).resize(function () {
+          check_width = $(window).width();
+      });
+      $('.gnb_menu li').hover(function () {
+          if (check_width > 768) {
+              $('.gnb_menu_sub_wrap', this).slideDown(300, 'swing');
+          }
+      }, function () {
+          $('.gnb_menu_sub_wrap', this).slideUp(100, 'swing');
+      });
   });
 });
 
@@ -101,4 +114,4 @@ $(function () {
     changeSlider();
   })
 
-}) // $end
+})

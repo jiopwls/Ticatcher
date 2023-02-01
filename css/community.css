@@ -52,7 +52,7 @@ p {
 }
 
 .list_header li:nth-child(2) {
-    width: 383px;
+    width: 442px;
     float: left;
     text-align: center;
     background: #FEF1AB;
@@ -60,15 +60,7 @@ p {
 }
 
 .list_header li:nth-child(3) {
-    width: 85px;
-    float: left;
-    text-align: center;
-    background: #FEF1AB;
-    color: rgb(120, 120, 120);
-}
-
-.list_header li:nth-child(4) {
-    width: 113px;
+    width: 115px;
     float: left;
     text-align: center;
     background: #FEF1AB;
@@ -76,12 +68,11 @@ p {
 }
 
 .list_header li:last-child {
-    width: 102px;
+    width: 128px;
     float: left;
     text-align: center;
     background: #FEF1AB;
-    padding-left: 5px;
-    color: rgb(120, 120, 120);
+    color: rgb(120, 120, 120)
 }
 
 .list_contents td {
@@ -96,41 +87,24 @@ p {
 }
 
 .list_contents li:nth-child(2) {
-    width: 382px;
+    width: 442px;
     float: left;
     text-align: left;
     padding: 10px 0 10px 10px;
 }
 
 .list_contents li:nth-child(3) {
-    width: 85px;
+    width: 110px;
     float: left;
     text-align: center;
-    padding: 10px 0;
-}
-
-.list_contents li:nth-child(4) {
-    width: 113px;
-    float: left;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 10px 10px;
 }
 
 .list_contents li:last-child {
-    width: 98px;
+    width: 130px;
     float: right;
     text-align: center;
-    padding: 10px 0;
-}
-
-.list_contents li {
-    cursor: auto;
-}
-
-.list_contents li:nth-child(2):hover {
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
+    padding: 10px 0 0 10px;
 }
 
 .list_pager {
@@ -204,17 +178,4 @@ p {
     font: 0/0 a;
     zoom: 1;
     border-radius: 4px;
-}
-
-.write_btn {
-    float: right;
-    width: 75px;
-    height: 35px;
-    background: #FEF1AB;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
-    text-align: center;
-    padding-top: 5px;
-    color: rgb(120, 120, 120);
 }

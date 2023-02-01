@@ -52,22 +52,15 @@
             </div>
         </div>
 
-        <div class="bg">
-        </div>
-
         <div class="gnb">
             <div class="gnb_contents">
                 <ul class="gnb_menu">
                     <li>
-                        <a href="">공연</a>
-                        <ul class="depth2">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">예매율 순위</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">평점 순위</a>
-                            </li>
-                        </ul>
+                        <a href="">
+                            <span class="menu_span">공연</span>
+                        </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="">예매</a>
                         <ul class="depth2" style="display: none; height: 200px;">
                             <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">지역별 예매</a>
@@ -75,33 +68,36 @@
                             <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">공연별 예매</a>
                             </li>
                         </ul>
+                    </li> -->
+                    <li>
+                        <a href="">
+                            <span class="menu_span">이벤트</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="">이벤트</a>
-                        <ul class="depth2" style="display: none; height: 200px;">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">진행중인
-                                    이벤트</a></li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">종료된
-                                    이벤트</a></li>
-                        </ul>
+                        <a href="" style="margin-left:5px;">
+                            <span class="menu_span">커뮤니티</span>
+                        </a>
+                        <div class="gnb_menu_sub_wrap">
+                            <ul class="gnb_menu_sub">
+                                <li><a href="#" target="_self">자유게시판</a></li>
+                                <li><a href="#" target="_self">극단원 모집</a></li>
+                                <li><a href="#" target="_self">오디션 정보</a></li>
+                                <li><a href="#" target="_self">새 공연 소식</a></li>
+                            </ul>
+                        </div>
+
                     </li>
-                    <li>
-                        <a href="">커뮤니티</a>
-                        <ul class="depth2" style="display: none; height: 200px;">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">자유게시판</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">극단원 모집</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">오디션 정보</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">새 공연
-                                    소식</a></li>
-                        </ul>
-                    </li>
-                    <li style="float: left; width:110px; padding:20px 0;">
-                        <a href="" style="display: block; margin-left: 45px;">극장검색</a>
+                    <li style="">
+                        <a href="" style="display: block; margin-left: 15px;">
+                            <span class="menu_span">공지사항</span>
+                        </a>
                     </li>
                 </ul>
+                <div class="search_box"
+                    style="float: right; margin-top: -30px; border-color: 1px solid #fff!important;">
+                    <input type="text" style="padding: 0 10px; border-radius: 20px;">
+                </div>
             </div>
         </div>
     </div>
@@ -110,7 +106,7 @@
             <div class="left_wrap">
                 <p>고객센터</p>
                 <ul>
-                    <a href="#">
+                    <a href="./help.html">
                         <li class="left_wrap_btn">
                             <span class="select_btn">공지사항</span>
                         </li>
@@ -120,9 +116,14 @@
                             <span>자주 찾는 질문</span>
                         </li>
                     </a>
-                    <a href="./help_qna.html">
+                    <a href="./help_new_qna.html">
                         <li class="left_wrap_btn">
                             <span>1:1 문의</span>
+                        </li>
+                    </a>
+                    <a href="./help_qna.html">
+                        <li class="left_wrap_btn">
+                            <span>1:1 문의내역</span>
                         </li>
                     </a>
                 </ul>
@@ -311,17 +312,39 @@
             </div>
         </div>
     </div>
-    <footer style="width: 980px; margin:0 auto;">
-        <a href=" /" style="width: 150px;">
-            <img class="logo" src="./img/logo.png" alt="로고">
+    <footer>
+        <a href=" /">
+            <img class="logo" src="./img/logo.png" alt="로고" style="width:150px;">
         </a>
-        <div class="company_info">
-            <address>(08368)서울특별시 구로구 항동 171-4, 하버라인 3단지 309동 101호</address>
-            <address>(08368)경기도 수원시 수원역</address>
-            <d1>
-                <dt>Ticatcher</dt>
-                <dt>Tel : 010-9074-1056</dt>
-            </d1>
+        <div class="all_company">
+            <div class="company_info" style="float: left; margin-right: 15px;">
+                <address>구로지사 : (08368)서울특별시 구로구 항동 171-4, 하버라인 3단지 309동 101호</address>
+                <d1 class="company_info_list">
+                    <dt>담당자</dt>
+                    <dd>정원진</dd>
+                    <dt>Tel</dt>
+                    <dd>010-9074-1056</dd>
+                    <dt>E-mail</dt>
+                    <dd>jiopwls@naver.com</dd>
+                </d1>
+            </div>
+            <div class="company_info">
+                <address>수원지사 : (00000)경기도 수원시 수원역</address>
+                <d1 class="company_info_list">
+                    <dt>담당자</dt>
+                    <dd>이재현</dd>
+                    <dt>Tel</dt>
+                    <dd>010-8663-1564</dd>
+                    <dt>E-mail</dt>
+                    <dd>tisrenac21@kakao.com</dd>
+                </d1>
+            </div>
+            <div class="company_info" style="margin-top: 5px;">
+                <d1 class="company_info_list">
+                    <!-- <dt></dt> -->
+                    <dd>&#169; Ticatcher. All Rights Reserved. 본 사이트는 포트폴리오 용으로 제작하였습니다.</dd>
+                </d1>
+            </div>
         </div>
     </footer>
 </body>
