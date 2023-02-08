@@ -14,7 +14,6 @@
     <!-- 스타일시트 -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/payment.css">
     <!-- bx slider -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- images loded -->
@@ -22,10 +21,13 @@
     <!-- 외부 스크립트 -->
     <script src="./js/main.js"></script>
     <!-- jQuery UI CSS파일 -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"
+        rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
     <!-- jQuery UI 라이브러리 js파일 -->
-    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/payment.css">
     <script src="./js/payment.js"></script>
 </head>
 
@@ -56,22 +58,15 @@
             </div>
         </div>
 
-        <div class="bg">
-        </div>
-
         <div class="gnb">
             <div class="gnb_contents">
                 <ul class="gnb_menu">
                     <li>
-                        <a href="">공연</a>
-                        <ul class="depth2">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">예매율 순위</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">평점 순위</a>
-                            </li>
-                        </ul>
+                        <a href="">
+                            <span class="menu_span">공연</span>
+                        </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="">예매</a>
                         <ul class="depth2" style="display: none; height: 200px;">
                             <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">지역별 예매</a>
@@ -79,33 +74,36 @@
                             <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">공연별 예매</a>
                             </li>
                         </ul>
+                    </li> -->
+                    <li>
+                        <a href="./event.html">
+                            <span class="menu_span">이벤트</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="">이벤트</a>
-                        <ul class="depth2" style="display: none; height: 200px;">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">진행중인
-                                    이벤트</a></li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">종료된
-                                    이벤트</a></li>
-                        </ul>
+                        <a href="./community.html" style="margin-left:5px;">
+                            <span class="menu_span">커뮤니티</span>
+                        </a>
+                        <div class="gnb_menu_sub_wrap">
+                            <ul class="gnb_menu_sub">
+                                <li><a href="#" target="_self">자유게시판</a></li>
+                                <li><a href="#" target="_self">극단원 모집</a></li>
+                                <li><a href="#" target="_self">오디션 정보</a></li>
+                                <li><a href="#" target="_self">새 공연 소식</a></li>
+                            </ul>
+                        </div>
+
                     </li>
-                    <li>
-                        <a href="">커뮤니티</a>
-                        <ul class="depth2" style="display: none; height: 200px;">
-                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">자유게시판</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">극단원 모집</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">오디션 정보</a>
-                            </li>
-                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">새 공연
-                                    소식</a></li>
-                        </ul>
-                    </li>
-                    <li style="float: left; width:110px; padding:20px 0;">
-                        <a href="" style="display: block; margin-left: 45px;">극장검색</a>
+                    <li style="">
+                        <a href="./help.html" style="display: block; margin-left: 15px;">
+                            <span class="menu_span">공지사항</span>
+                        </a>
                     </li>
                 </ul>
+                <div class="search_box"
+                    style="float: right; margin-top: -30px; border-color: 1px solid #fff!important;">
+                    <input type="text" style="padding: 0 10px; border-radius: 20px;">
+                </div>
             </div>
         </div>
     </div>
@@ -115,7 +113,7 @@
                 <section class="pay_show_info">
                     <div class="show_imgbox">
                         <img src="http://image.toast.com/aaaaab/ticketlink/TKL_8/main0126.jpg" alt="연극 포스터"
-                            style="width: 280px;">
+                            style="width: 280px; border-radius: 10px;">
                     </div>
                     <div class="show_detail_info">
                         <div class="show_header">
@@ -199,7 +197,7 @@
                             </div>
                             <div id="calendar_popup" class="calendar_popup02 choice_day">
                                 <div class="popup_warp">
-                                    <div id="datepicker"></div>
+                                    <div class="datepicker inp"></div>
                                 </div>
                             </div>
                         </div>

@@ -1,31 +1,4 @@
 $(document).ready(function() {
-  // var gnb = $('.gnb_menu');
-
-  // gnb.mouseenter(function() {
-  //   $('.depth2').show();
-  //   // menu bg
-  //   var menuHeight = $('.header').outerHeight();
-  //   var inmeHegiht = $('.depth2').outerHeight();
-  //   $('.bg').css({
-  //     'top': menuHeight + 'px',
-  //     height: inmeHegiht + 'px'
-  //   });
-  // });
-
-  // gnb.mouseleave(function() {
-  //   $('.depth2').hide();
-  //   $('.bg').css('height', '0')
-
-  // });
-
-  // //depth2 hover시 depth1 active
-  // $('.gnb_menu < li').mouseenter(function() {
-  //   $(this).children().addClass('active');
-  //   $(this).siblings().children().removeClass('active')
-  // });
-  // $('.gnb_menu < li').mouseleave(function() {
-  //   $(this).children().removeClass('active');
-  // });
   var check_width = $(window).width();
   $(function () {
       $(window).resize(function () {
@@ -39,7 +12,14 @@ $(document).ready(function() {
           $('.gnb_menu_sub_wrap', this).slideUp(100, 'swing');
       });
   });
+    $(".left_wrap ul a li span").click(function () {
+      $(this).addClass("select_btn");
+      $('.left_wrap ul a li span').not(this).removeClass("select_btn")
+  });
 });
+
+
+
 
 /** 
   sliderStart() 슬라이더 재생
@@ -115,3 +95,11 @@ $(function () {
   })
 
 })
+
+// $(".left_wrap ul a li span").click(function () {
+//   if ($(this).hasClass("select_btn")) {
+//       $(this).removeClass("select_btn");
+//   } else {
+//       $(this).addClass("select_btn");
+//   }
+// });

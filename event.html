@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticatcher - 고객센터</title>
+    <title>Ticatcher</title>
     <!-- 구글 웹폰트 -->
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
@@ -14,15 +14,21 @@
     <!-- 스타일시트 -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mypage.css">
-    <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- bx slider -->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- images loded -->
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <!-- 외부 스크립트 -->
     <script src="./js/main.js"></script>
+    <!-- jQuery UI CSS파일 -->
+    <link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"
+        rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <!-- jQuery UI 라이브러리 js파일 -->
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./css/payment.css">
+    <script src="./js/payment.js"></script>
 </head>
 
 <body>
@@ -60,8 +66,17 @@
                             <span class="menu_span">공연</span>
                         </a>
                     </li>
+                    <!-- <li>
+                        <a href="">예매</a>
+                        <ul class="depth2" style="display: none; height: 200px;">
+                            <li style="margin-top: 20px;"><a href="" style="display: block; font-size: 14px;">지역별 예매</a>
+                            </li>
+                            <li style="margin-top: 15px;"><a href="" style="display: block; font-size: 14px;">공연별 예매</a>
+                            </li>
+                        </ul>
+                    </li> -->
                     <li>
-                        <a href="./event.html">
+                        <a href="">
                             <span class="menu_span">이벤트</span>
                         </a>
                     </li>
@@ -77,6 +92,7 @@
                                 <li><a href="#" target="_self">새 공연 소식</a></li>
                             </ul>
                         </div>
+
                     </li>
                     <li style="">
                         <a href="./help.html" style="display: block; margin-left: 15px;">
@@ -86,97 +102,24 @@
                 </ul>
                 <div class="search_box"
                     style="float: right; margin-top: -30px; border-color: 1px solid #fff!important;">
-                    <input type="text" style="padding: 0 10px; border-radius: 20px;" placeholder="찾으실 공연을 입력해주세요.">
+                    <input type="text" style="padding: 0 10px; border-radius: 20px;">
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="contents">
-            <div class="left_wrap">
-                <p>MyPage</p>
-                <ul>
-                    <a href="myPage.html">
-                        <li class="left_wrap_btn">
-                            <span>예매내역</span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="left_wrap_btn">
-                            <span>환불/취소내역</span>
-                        </li>
-                    </a>
-                    <a href="./fix_myPage.html">
-                        <li class="left_wrap_btn">
-                            <span>회원정보수정</span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="left_wrap_btn">
-                            <span>활동관리</span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="left_wrap_btn">
-                            <span>회원탈퇴</span>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-            <div class="right_wrap">
-                <p class="right_title">
-                    예매내역
-                </p>
-                <div class="right_list">
-                    <div class="reserve_wrap">
-                        <div class="buy_info_top">
-                            <span>입금기한 초과</span>
-                            <span style="float: right;">2023-02-01</span>
-                        </div>
-                        <div class="buy_info_detail">
-                            <div class="buy_info_img">
-                                <a href="">
-                                    <img src="https://timeticket.co.kr/wys2/file_attach_thumb/2022/01/27/1643271898-98-0_wonbon_N_7_226x316_90_2.jpg"
-                                        alt="공연 썸네일">
-                                </a>
-                            </div>
-                            <div class="buy_info_txt">
-                                <div class="buy_info_txt_title">
-                                    <a href="">한 뼘 사이</a>
-                                </div>
-                                <div class="buy_info_txt_date">
-                                    2.02[목] 19:30 일반 (1매)
-                                    <br>
-                                </div>
-                                <div class="buy_info_txt_cnt">
-                                    총 1매 / 13,500원
-                                </div>
-                                <div class="buy_info_txt_how">
-                                    무통장입금
-                                </div>
-                                <div class="buy_info_txt_can" style="color: rgba(255, 0, 0, 0.8);">
-                                    입금기한(신청 후 24시간)초과 - 자동 취소
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list_pager">
-                        <button class="btn_pager first hidden" type="button" onclick="">처음</button>
-                        <button class="btn_pager prev hidden" type="button" onclick="">이전</button>
-                        <ul>
-                            <li>
-                                <a href="" title="1 페이지 선택" class="on">1</a>
-                            </li>
-                        </ul>
-                        <button class="btn_pager next hidden" type="button" onclick="">다음</button>
-                        <button class="btn_pager end hidden" type="button" onclick="">끝</button>
-                    </div>
-                </div>
+        <div style="position: relative; height:600px;">
+            <div style="position: absolute;left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex;">
+                <img src="./img/hourglass.png" alt="모래시계" style="width: 130px; align-items: center;">
+                <span style=" font-size: 28px; align-items:center; height: 100%; margin-top: 85px;">
+                    현재
+                    <b>컨텐츠 준비중 </b>입니다.
+                </span>
             </div>
         </div>
     </div>
-    <footer>
-        <a href="./index.html">
+    <footer style="width: 980px; margin:0 auto; margin-top: 10px; font-size: 12px;">
+        <a href=" /">
             <img class="logo" src="./img/logo.png" alt="로고" style="width:150px;">
         </a>
         <div class="all_company">
@@ -210,6 +153,14 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+
+        var divs = $(".show_box");
+        for (var i = 0; i < divs.length; i += 4) {
+            divs.slice(i, i + 4).wrapAll("<tr class='wrap'></tr>");
+        }
+
+    </script>
 </body>
 
 </html>

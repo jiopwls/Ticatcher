@@ -165,7 +165,6 @@
     height: 45px;
 }
 
-
 .select_chart {
     padding-left: 10px;
 }
@@ -173,6 +172,7 @@
 .container {
     position: relative;
     width: 100%;
+    min-height: 600px;
 }
 
 table {
@@ -263,4 +263,24 @@ footer a {
 
 .hidden {
     display: none !important;
+}
+
+.search_box {
+    float: right;
+    margin-top: -38px;
+    border-color: 1px solid #fff !important;
+    height: 30px;
+}
+
+.search_box input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    color: #fff;
+    vertical-align: bottom;
 }
