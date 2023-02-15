@@ -195,13 +195,13 @@ p {
 
 .write_btn {
     float: right;
-    width: 55px;
-    height: 30px;
+    width: 75px;
+    height: 35px;
     background: #FEF1AB;
     border-radius: 5px;
     font-size: 16px;
     margin-top: 10px;
     text-align: center;
-    padding-top: 3px;
+    line-height: 35px;
     color: rgb(120, 120, 120);
 }

@@ -39,8 +39,36 @@ p {
     margin-top: 15px;
 }
 
-.list_header li {
-    padding: 10px 0;
+.notice_wrap {
+    margin-top: -4px;
+    border-top: 2px solid #FEF1AB;
+}
+
+.notice_header {
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.notice_header li {
+    float: left;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 45px;
+    width: 400px;
+}
+
+.notice_header li:last-child {
+    width: 100px;
+    float: right;
+    font-weight: normal;
+    text-align: right;
+}
+
+.notice_body {
+    padding: 20px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .list_header li:first-child {
@@ -51,12 +79,20 @@ p {
     color: rgb(120, 120, 120);
 }
 
-.list_header li:last-child {
-    width: 685px;
+.list_header li:nth-child(2) {
+    width: 557px;
     float: left;
     text-align: center;
     background: #FEF1AB;
     color: rgb(120, 120, 120);
+}
+
+.list_header li:last-child {
+    width: 128px;
+    float: left;
+    text-align: center;
+    background: #FEF1AB;
+    color: rgb(120, 120, 120)
 }
 
 .list_contents td {
@@ -70,21 +106,18 @@ p {
     padding: 10px 0;
 }
 
-.list_contents li:last-child {
-    width: 382px;
+.list_contents li:nth-child(2) {
+    width: 565px;
     float: left;
     text-align: left;
     padding: 10px 0 10px 10px;
 }
 
-.list_contents li {
-    cursor: pointer;
-}
-
-.list_contents li:nth-child(2):hover {
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
+.list_contents li:last-child {
+    width: 120px;
+    float: right;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .list_pager {
@@ -94,6 +127,7 @@ p {
 
 .list_pager ul {
     display: inline-block;
+    vertical-align: top;
 }
 
 .list_pager li {
@@ -168,6 +202,6 @@ p {
     font-size: 16px;
     margin-top: 10px;
     text-align: center;
-    padding-top: 5px;
+    line-height: 35px;
     color: rgb(120, 120, 120);
 }

@@ -76,7 +76,7 @@ p {
 }
 
 .list_header li:last-child {
-    width: 102px;
+    width: 104px;
     float: left;
     text-align: center;
     background: #FEF1AB;
@@ -96,28 +96,28 @@ p {
 }
 
 .list_contents li:nth-child(2) {
-    width: 382px;
+    width: 387px;
     float: left;
     text-align: left;
     padding: 10px 0 10px 10px;
 }
 
 .list_contents li:nth-child(3) {
-    width: 85px;
+    width: 80px;
     float: left;
     text-align: center;
     padding: 10px 0;
 }
 
 .list_contents li:nth-child(4) {
-    width: 113px;
+    width: 121px;
     float: left;
     text-align: center;
     padding: 10px 0;
 }
 
 .list_contents li:last-child {
-    width: 98px;
+    width: 93px;
     float: right;
     text-align: center;
     padding: 10px 0;

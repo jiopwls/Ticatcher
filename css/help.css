@@ -52,7 +52,7 @@ p {
 }
 
 .list_header li:nth-child(2) {
-    width: 555px;
+    width: 557px;
     float: left;
     text-align: center;
     background: #FEF1AB;
@@ -79,14 +79,14 @@ p {
 }
 
 .list_contents li:nth-child(2) {
-    width: 550px;
+    width: 565px;
     float: left;
     text-align: left;
     padding: 10px 0 10px 10px;
 }
 
 .list_contents li:last-child {
-    width: 130px;
+    width: 120px;
     float: right;
     text-align: center;
     padding: 10px 0;

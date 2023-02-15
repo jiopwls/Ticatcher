@@ -18,6 +18,36 @@ $(document).ready(function() {
   });
 });
 
+var popWidth = 500;
+var popHeight = 500;
+var quit_popHeight = 350;
+
+var popX = Math.ceil((window.screen.width - popWidth) / 2);
+var popY = Math.ceil((window.screen.height - popHeight) / 2);
+var quit_popY = Math.ceil((window.screen.height - quit_popHeight) / 2);
+
+function change_Pw() {
+  window.open('change_pw.html', '비밀번호 변경', 'width=' + popWidth + ',height=' + popHeight + ',left=' + popX + ', top=' + popY);
+}
+
+function quit_member() {
+  window.open('pop_quit_member.html', '회원탈퇴', 'width=' + popWidth + ',height=' + quit_popHeight + ',left=' + popX + ', top=' + quit_popY);
+}
+
+function change_pw() {
+  alert("비밀번호가 변경되었습니다.");
+  winClose();
+}
+
+function quit_txt() {
+  alert("회원탈퇴가 완료되었습니다.");
+  winClose();
+}
+
+function winClose() {
+  self.opener = self;
+  opener.window.close();
+}
 
 
 

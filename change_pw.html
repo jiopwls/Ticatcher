@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticatcher - 비밀번호 변경</title>
+    <!-- 구글 웹폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/change_pw.css">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- images loded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- 외부 스크립트 -->
+    <script src="./js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_content">
+            <div class="content pw_page">
+                <img class="logo" src="./img/logo_join3.png" alt="로고">
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_area" style="position:relative;">
+        <div class="pw_txt">
+            <p>
+                비밀번호는 8~15자리의
+                <br>
+                영문, 숫자 조합으로 만들어 주세요.
+            </p>
+        </div>
+        <form name="changePwForm" style="">
+            <div class="join_row" style="">
+                <input type="password" id="user_pass" class="pwd input_txt" name="user_pass" onkeyup="chkpwd();" size=15
+                    placeholder="신규 비밀번호" style="">
+                <div class="input_alert_pw"></div>
+                <input type="password" class="pwd_chk input_box" name="pwd_chk" onkeyup="chkpwd();" size=15
+                    placeholder="신규 비밀번호 재확인" style="margin-top: 0px;">
+                <div class="input_alert_pw2"></div>
+            </div>
+            <input type="hidden" name="pwdchk" value="0">
+            <div class="divpwd"></div>
+            <div class="confirm_box" style="margin:0 auto">
+                <button type="submit" class="" onClick="change_pw();">변경하기</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
